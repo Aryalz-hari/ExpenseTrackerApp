@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
-import "./globals.css";
+import "./global.css"
 
 
 export const metadata: Metadata = {
   title: "Expense App",
-  description: "Expense Management App",
+  description: "Finance App Tracks Everything",
 };
 
 export default function RootLayout({
