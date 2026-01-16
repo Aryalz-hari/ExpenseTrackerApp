@@ -4,7 +4,10 @@ import "./global.css"
 
 
 export const metadata: Metadata = {
-  title: "Expense App",
+  title: {
+    default:"Expense App",
+    template:"%s|Expense App",
+  },
   description: "Finance App Tracks Everything",
 };
 
