@@ -5,6 +5,14 @@ export default async function docsPage({
 }: {
   params: Promise<{ slug: string[] }>;
 }) {
+
+
+await  new Promise ((resolve)=>{
+setTimeout(()=>{
+  resolve("Intentional Delay")
+},2000)
+})
+
   const { slug } = await params;
   if (slug?.length === 2) {
     return (
