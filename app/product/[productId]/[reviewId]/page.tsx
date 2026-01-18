@@ -7,8 +7,7 @@ async function Reviewpage({params}:{params:
     reviewId:number}}){
 
     const {productId,reviewId}= await params;
-    if(reviewId>10){
-         notFound();
+    if(reviewId>10){ throw new Error("Review not found for that product id");
     }
   return (
     <div>This is the {productId} with {reviewId}</div>
